@@ -3,11 +3,12 @@
 
 :root {
   --orange: #ff5500;
+  --orange-dim: #ffb692;
   --font: #222222;
   --font-: #555555;
   --font--: #707070;
   --font---: #cecece;
-  --font----: #e7e7e7;
+  --font----: #dddddd;
 }
 
 * {
@@ -172,6 +173,65 @@ main > section:nth-child(2) > p > span:nth-child(1) {
 
 main > section:nth-child(2) > p > span:nth-child(2) {
   color: #30a2ff;
+}
+
+main > section:nth-child(3) {
+  margin: 1rem;
+  padding-block: 1rem;
+  border: solid 1px var(--font----);
+}
+
+main > section:nth-child(4) {
+  margin: 1rem;
+  padding-block: 1rem;
+  border: solid 1px var(--font----);
+}
+
+.sect-title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 9rem;
+  padding: 1rem 1rem 1rem 0.5rem;
+  background-color: var(--orange);
+}
+
+.sect-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.5rem;
+  width: 0.5rem;
+  height: 100%;
+  background-color: var(--orange);
+}
+
+.sect-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1rem;
+  width: 2rem;
+  height: 100%;
+  background-color: var(--orange);
+  transform: skew(-15deg);
+  z-index: -1;
+}
+
+.sect-title > h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.sect-title > h3 {
+  font-family: "Ubuntu Mono", monospace;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--orange-dim);
 }
 
 footer {
