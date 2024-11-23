@@ -284,6 +284,7 @@ main > section:nth-child(4) > div:nth-child(3) > div > div > img:nth-child(2) {
   width: 25%;
   border-radius: 50%;
   border: solid 1px var(--font----);
+  background-color: white;
 }
 
 main > section:nth-child(4) > div:nth-child(3) > div > h4 {
@@ -296,7 +297,7 @@ main > section:nth-child(4) > div:nth-child(3) > div > h4 {
 
 @media screen and (max-width: 633px) {
   main > section:nth-child(4) > div:nth-child(3) > div {
-    width: 100%;
+    width: 75%;
     max-width: unset;
   }
 
