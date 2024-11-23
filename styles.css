@@ -234,21 +234,90 @@ main > section:nth-child(4) {
   color: var(--orange-dim);
 }
 
-main > section:nth-child(4) > div:nth-child(2) {
+main > section:nth-child(4) > p {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding-inline: 1rem;
+  text-align: center;
+}
+
+main > section:nth-child(4) > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main > section:nth-child(4) > div:nth-child(3) > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin-top: 1rem;
+  max-width: 300px;
+  aspect-ratio: 3/4;
+  padding: 1rem;
+  transition: transform 0.2s ease-out;
 }
 
-main > section:nth-child(4) > div:nth-child(2) > img {
-  width: calc(100% - 2rem);
+main > section:nth-child(4) > div:nth-child(3) > div:hover {
+  transform: scale(107%);
+}
+
+main > section:nth-child(4) > div:nth-child(3) > div > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+main > section:nth-child(4) > div:nth-child(3) > div > div > img:nth-child(1) {
+  width: 100%;
+  border-radius: 50%;
+  border: solid 1px var(--font----);
+}
+
+main > section:nth-child(4) > div:nth-child(3) > div > div > img:nth-child(2) {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 25%;
+  border-radius: 50%;
+  border: solid 1px var(--font----);
+}
+
+main > section:nth-child(4) > div:nth-child(3) > div > h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 633px) {
+  main > section:nth-child(4) > div:nth-child(3) > div {
+    width: 100%;
+    max-width: unset;
+  }
+
+  main > section:nth-child(4) > div:nth-child(3) > div > h4 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  main > section:nth-child(4) > div:nth-child(3) > div > h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main > section:nth-child(4) > div:nth-child(3) > div > h4 {
+    font-size: 1.2rem;
+  }
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100vw;
   background-color: var(--orange);
   padding-bottom: 1rem;
