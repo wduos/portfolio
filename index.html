@@ -10,7 +10,7 @@
   <body>
     <header>
       <a href="https://wendelduarte.com.br">
-        <img src="./assets/img/logo_orange.svg" alt="logo W" />
+        <img src="./assets/img/logo_blue.svg" alt="logo W" />
       </a>
 
       <nav>
@@ -68,47 +68,83 @@
             <div>
               <img src="./assets/img/logo-kakaroto.png" alt="logo kakaroto" />
             </div>
-            <h4>Kakaroto Sushi Delivery</h4>
           </div>
           <div>
             <div>
               <img src="./assets/img/logo-elodin.png" alt="logo elodin" />
               <img src="./assets/img/logo-elodin-m.png" alt="logo elodin mod" />
             </div>
-            <h4>Elodin</h4>
           </div>
           <div>
             <div>
               <img src="./assets/img/logo-polaris.png" alt="logo polaris" />
             </div>
-            <h4>Polaris</h4>
           </div>
           <div>
             <div>
               <img src="./assets/img/logo-resenha.png" alt="logo resenha" />
             </div>
-            <h4>Resenha</h4>
           </div>
           <div>
             <div>
               <img src="./assets/img/logo-geeo.png" alt="logo geeo" />
             </div>
-            <h4>GEEO</h4>
           </div>
           <div>
             <div>
               <img src="./assets/img/logo-orion.png" alt="logo orion" />
               <img src="./assets/img/logo-orion-m.png" alt="logo orion mod" />
             </div>
-            <h4>Orion</h4>
           </div>
           <div>
             <div>
               <img src="./assets/img/logo-sfe.png" alt="logo sfe" />
             </div>
-            <h4>SFE</h4>
           </div>
         </div>
+      </section>
+
+      <section>
+        <div class="sect-title">
+          <h2>Música</h2>
+          <h3>PROJETOS</h3>
+        </div>
+
+        <p class="dim">
+          Tenho a produção musical como hobby desde 2015. Utilizo o FL Studio,
+          juntamente com seus VSTs e sintetizadores nativos, para alcançar os
+          resultados que imagino.
+        </p>
+
+        <div>
+          <button class="disabled" type="button" data-player="previous">
+            <img
+              src="./assets/icons/backward-step.svg"
+              alt="icone de anterior"
+            />
+          </button>
+          <button type="button" data-player="play">
+            <img
+              id="play-icon"
+              src="./assets/icons/play.svg"
+              alt="icone de play"
+            />
+            <img
+              id="pause-icon"
+              src="./assets/icons/pause.svg"
+              alt="icone de pause"
+              style="display: none"
+            />
+          </button>
+          <button type="button" data-player="next">
+            <img src="./assets/icons/forward-step.svg" alt="icone de próximo" />
+          </button>
+        </div>
+
+        <audio src="./assets/music/motion.mp3"></audio>
+        <audio src="./assets/music/caier.mp3"></audio>
+        <audio src="./assets/music/drown.mp3"></audio>
+        <audio src="./assets/music/windchime.mp3"></audio>
       </section>
     </main>
 
@@ -118,5 +154,7 @@
       </div>
       <p>Desenvolvido com ♥ por Wendel Duarte</p>
     </footer>
+
+    <script src="./player.js"></script>
   </body>
 </html>

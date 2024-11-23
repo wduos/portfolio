@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
 :root {
-  --orange: #ff5500;
-  --orange-dim: #ffb692;
+  --blue: #008cff;
+  --blue-dim: #b4ddff;
   --font: #222222;
   --font-: #555555;
   --font--: #707070;
@@ -87,7 +87,7 @@ header > nav > a:hover::after {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: var(--orange);
+  background-color: var(--blue);
 }
 
 h1 {
@@ -124,7 +124,7 @@ main > section:nth-child(1) > div:nth-child(1)::after {
   aspect-ratio: 1/1;
   border: solid white 0.3rem;
   border-radius: 50%;
-  background-color: var(--orange);
+  background-color: var(--blue);
 }
 
 main > section:nth-child(1) > div > img {
@@ -168,11 +168,11 @@ main > section:nth-child(2) * {
 }
 
 main > section:nth-child(2) > p > span:nth-child(1) {
-  color: var(--orange);
+  color: var(--blue);
 }
 
 main > section:nth-child(2) > p > span:nth-child(2) {
-  color: #30a2ff;
+  color: #ff7230;
 }
 
 main > section:nth-child(3) {
@@ -187,6 +187,12 @@ main > section:nth-child(4) {
   border: solid 1px var(--font----);
 }
 
+main > section:nth-child(5) {
+  margin: 1rem;
+  padding-block: 1rem;
+  border: solid 1px var(--font----);
+}
+
 .sect-title {
   position: relative;
   display: flex;
@@ -194,7 +200,7 @@ main > section:nth-child(4) {
   gap: 0.2rem;
   width: 9rem;
   padding: 1rem 1rem 1rem 0.5rem;
-  background-color: var(--orange);
+  background-color: var(--blue);
 }
 
 .sect-title::before {
@@ -204,7 +210,7 @@ main > section:nth-child(4) {
   left: -0.5rem;
   width: 0.5rem;
   height: 100%;
-  background-color: var(--orange);
+  background-color: var(--blue);
 }
 
 .sect-title::after {
@@ -214,7 +220,7 @@ main > section:nth-child(4) {
   right: -1rem;
   width: 2rem;
   height: 100%;
-  background-color: var(--orange);
+  background-color: var(--blue);
   transform: skew(-15deg);
   z-index: -1;
 }
@@ -231,7 +237,7 @@ main > section:nth-child(4) {
   font-family: "Ubuntu Mono", monospace;
   font-style: normal;
   font-size: 0.9rem;
-  color: var(--orange-dim);
+  color: var(--blue-dim);
 }
 
 main > section:nth-child(4) > p {
@@ -254,7 +260,7 @@ main > section:nth-child(4) > div:nth-child(3) > div {
   align-items: center;
   gap: 1rem;
   max-width: 300px;
-  aspect-ratio: 3/4;
+  aspect-ratio: 1/1;
   padding: 1rem;
   transition: transform 0.2s ease-out;
 }
@@ -287,40 +293,77 @@ main > section:nth-child(4) > div:nth-child(3) > div > div > img:nth-child(2) {
   background-color: white;
 }
 
-main > section:nth-child(4) > div:nth-child(3) > div > h4 {
-  font-family: "Ubuntu", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
 @media screen and (max-width: 633px) {
   main > section:nth-child(4) > div:nth-child(3) > div {
     width: 75%;
     max-width: unset;
   }
-
-  main > section:nth-child(4) > div:nth-child(3) > div > h4 {
-    font-size: 2rem;
-  }
 }
 
-@media screen and (max-width: 464px) {
-  main > section:nth-child(4) > div:nth-child(3) > div > h4 {
-    font-size: 1.5rem;
-  }
+main > section:nth-child(5) > p {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding-inline: 1rem;
+  text-align: center;
 }
 
-@media screen and (max-width: 400px) {
-  main > section:nth-child(4) > div:nth-child(3) > div > h4 {
-    font-size: 1.2rem;
-  }
+main > section:nth-child(5) > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: calc(100% - 2rem);
+  max-width: 500px;
+  margin: auto;
+  padding-block: 1.5rem;
+  background-color: var(--blue);
+}
+
+main > section:nth-child(5) > div:nth-child(3) > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+}
+
+main > section:nth-child(5) > div:nth-child(3) > button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+main > section:nth-child(5) > div:nth-child(3) > button:nth-child(1),
+main > section:nth-child(5) > div:nth-child(3) > button:nth-child(3) {
+  width: 2.5rem;
+}
+
+main > section:nth-child(5) > div:nth-child(3) > button:nth-child(1) > img,
+main > section:nth-child(5) > div:nth-child(3) > button:nth-child(3) > img {
+  width: 1rem;
+}
+
+main > section:nth-child(5) > div:nth-child(3) > button:nth-child(2) {
+  width: 3.5rem;
+}
+
+main > section:nth-child(5) > div:nth-child(3) > button:nth-child(2) > img {
+  width: 1.5rem;
+}
+
+#play-icon {
+  transform: translateX(1px);
+}
+
+.disabled {
+  opacity: 50%;
 }
 
 footer {
   width: 100vw;
-  background-color: var(--orange);
+  background-color: var(--blue);
   padding-bottom: 1rem;
 }
 
