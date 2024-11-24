@@ -198,9 +198,16 @@ main > section:nth-child(3) > div:nth-child(3) {
 
 main > section:nth-child(3) > div:nth-child(3) > div {
   width: calc(100% - 2rem);
-  max-width: 550px;
+  max-width: calc(650px - 2.5rem);
   padding: 1rem;
   border: 1px solid var(--font----);
+}
+
+main > section:nth-child(3) > div:nth-child(3) > div > img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border: solid 1px var(--font----);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
 main > section:nth-child(3) > div:nth-child(3) > div > h3 {
@@ -342,7 +349,7 @@ main > section:nth-child(4) > div:nth-child(3) > div > div > img:nth-child(2) {
 
 @media screen and (max-width: 633px) {
   main > section:nth-child(4) > div:nth-child(3) > div {
-    width: 75%;
+    width: 50%;
     max-width: unset;
   }
 }
