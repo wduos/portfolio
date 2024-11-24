@@ -154,6 +154,38 @@ main > section:nth-child(1) > div:nth-child(2) > div > img {
   width: 2rem;
 }
 
+@media screen and (max-width: 559px) {
+  main > section:nth-child(1) {
+    flex-direction: column;
+  }
+
+  main > section:nth-child(1) > div:nth-child(2) > h1 {
+    text-align: center;
+  }
+
+  main > section:nth-child(1) > div:nth-child(2) > h2 {
+    text-align: center;
+  }
+
+  main > section:nth-child(1) > div:nth-child(2) > div {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main > section:nth-child(1) > div:nth-child(2) > h1 {
+    font-size: 2.3rem;
+  }
+
+  main > section:nth-child(1) > div:nth-child(2) > h2 {
+    font-size: 0.9rem;
+  }
+
+  main > section:nth-child(1) > div:nth-child(2) > div {
+    justify-content: center;
+  }
+}
+
 main > section:nth-child(2) {
   margin-inline: 1rem;
   padding: 1rem;
@@ -239,6 +271,19 @@ main > section:nth-child(3) > div:nth-child(3) > div > a {
 
 main > section:nth-child(3) > div:nth-child(3) > div > a:hover {
   color: var(--font--);
+}
+
+@media screen and (max-width: 1269px) {
+  main > section:nth-child(3) > div:nth-child(3) > div {
+    width: calc(50% - 1.5rem);
+  }
+}
+
+@media screen and (max-width: 922px) {
+  main > section:nth-child(3) > div:nth-child(3) > div {
+    width: calc(100% - 2rem);
+    max-width: unset;
+  }
 }
 
 .sect-title {
@@ -352,6 +397,16 @@ main > section:nth-child(4) > div:nth-child(3) > div > div > img:nth-child(2) {
     width: 50%;
     max-width: unset;
   }
+
+  main
+    > section:nth-child(4)
+    > div:nth-child(3)
+    > div
+    > div
+    > img:nth-child(2) {
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
 }
 
 main > section:nth-child(5) {
@@ -376,7 +431,8 @@ main > section:nth-child(5) > div:nth-child(3) {
   max-width: 500px;
   margin: auto;
   padding-block: 1.5rem;
-  background-color: var(--blue);
+  border: solid 1px var(--font----);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
 main > section:nth-child(5) > div:nth-child(3) > button {
@@ -392,7 +448,7 @@ main > section:nth-child(5) > div:nth-child(3) > button {
 }
 
 main > section:nth-child(5) > div:nth-child(3) > button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 main > section:nth-child(5) > div:nth-child(3) > button:nth-child(1),
