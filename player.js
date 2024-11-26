@@ -118,8 +118,12 @@ function changePlayBtnStyle() {
   if (isPlaying) {
     document.getElementById("play-icon").style.display = "none";
     document.getElementById("pause-icon").style.display = "block";
+    document.getElementById("play-pause-btn").style.animationPlayState =
+      "running";
   } else {
     document.getElementById("play-icon").style.display = "block";
     document.getElementById("pause-icon").style.display = "none";
+    document.getElementById("play-pause-btn").style.animationPlayState =
+      "paused";
   }
 }

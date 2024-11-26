@@ -506,7 +506,7 @@ main > section:nth-child(5) > div:nth-child(3) > button {
 }
 
 main > section:nth-child(5) > div:nth-child(3) > button:hover {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 main > section:nth-child(5) > div:nth-child(3) > button:nth-child(1),
@@ -521,6 +521,20 @@ main > section:nth-child(5) > div:nth-child(3) > button:nth-child(3) > img {
 
 main > section:nth-child(5) > div:nth-child(3) > button:nth-child(2) {
   width: 3.5rem;
+  animation: glow 7s forwards infinite alternate ease-in-out;
+  animation-play-state: paused;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: -2px 1px 3px var(--blue-dim);
+  }
+  50% {
+    box-shadow: 2px -5px 5px var(--blue-dim);
+  }
+  100% {
+    box-shadow: -7px 3px 25px var(--blue-dim);
+  }
 }
 
 main > section:nth-child(5) > div:nth-child(3) > button:nth-child(2) > img {
