@@ -23,6 +23,10 @@
   color: var(--font);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -34,6 +38,16 @@ body {
 
 .bold {
   font-weight: 700;
+}
+
+.center {
+  display: block;
+  text-align: center;
+}
+
+.ubuntu {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
 }
 
 header {
@@ -90,11 +104,6 @@ header > nav > a:hover {
 header > nav > a:hover::after {
   left: 0;
   opacity: 1;
-}
-
-.current {
-  font-weight: 700;
-  color: var(--font);
 }
 
 h1 {
@@ -549,6 +558,9 @@ main > section:nth-child(5) > div:nth-child(3) > button:nth-child(2) > img {
   opacity: 50%;
 }
 
+main > section:nth-child(6) {
+  padding: 1rem;
+}
 footer {
   width: 100vw;
   background-color: var(--blue);
