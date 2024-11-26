@@ -146,7 +146,16 @@ main > section:nth-child(1) > div:nth-child(2) > h1 {
 main > section:nth-child(1) > div:nth-child(2) > h2 {
   text-transform: uppercase;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
+  line-height: 1.4rem;
+}
+
+main > section:nth-child(1) > div:nth-child(2) > h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.2rem;
   color: var(--font--);
 }
 
@@ -176,6 +185,10 @@ main > section:nth-child(1) > div:nth-child(2) > div > img {
 
   main > section:nth-child(1) > div:nth-child(2) > div {
     justify-content: center;
+  }
+
+  main > section:nth-child(1) > div:nth-child(2) > h3 {
+    text-align: center;
   }
 }
 
