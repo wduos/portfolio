@@ -229,7 +229,7 @@ main > section:nth-child(3) > p {
 
 main > section:nth-child(3) > div:nth-child(3) {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
@@ -299,13 +299,14 @@ main > section:nth-child(3) > div:nth-child(3) > div > div {
 main > section:nth-child(3) > div:nth-child(3) > div > div > h6 {
   margin-top: 1rem;
   padding: 0.4rem 0.7rem;
-  background-color: var(--blue-mid);
+  background-image: linear-gradient(to right, var(--blue), var(--blue-mid));
   border-radius: 1rem;
   font-size: 0.85rem;
   font-weight: 500;
   font-family: "Ubuntu", sans-serif;
   font-style: normal;
   color: white;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.15);
 }
 
 main > section:nth-child(3) > div:nth-child(3) > div > div > img {
@@ -397,16 +398,15 @@ main > section:nth-child(4) > div:nth-child(3) {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1rem;
 }
 
 main > section:nth-child(4) > div:nth-child(3) > div {
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  max-width: 300px;
+  width: calc(100% / 4 - 1.25rem);
   aspect-ratio: 1/1;
-  padding: 1rem;
   transition: transform 0.2s ease-out;
 }
 
@@ -414,21 +414,13 @@ main > section:nth-child(4) > div:nth-child(3) > div:hover {
   transform: scale(107%);
 }
 
-main > section:nth-child(4) > div:nth-child(3) > div > div {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  aspect-ratio: 1/1;
-}
-
-main > section:nth-child(4) > div:nth-child(3) > div > div > img:nth-child(1) {
+main > section:nth-child(4) > div:nth-child(3) > div > img:nth-child(1) {
   width: 100%;
   border-radius: 50%;
   border: solid 1px var(--font----);
 }
 
-main > section:nth-child(4) > div:nth-child(3) > div > div > img:nth-child(2) {
+main > section:nth-child(4) > div:nth-child(3) > div > img:nth-child(2) {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
@@ -438,20 +430,27 @@ main > section:nth-child(4) > div:nth-child(3) > div > div > img:nth-child(2) {
   background-color: white;
 }
 
-@media screen and (max-width: 633px) {
+@media screen and (max-width: 950px) {
+  main > section:nth-child(4) > div:nth-child(3) > div > img:nth-child(2) {
+    bottom: 0.35em;
+    right: 0.35rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
   main > section:nth-child(4) > div:nth-child(3) > div {
-    width: 50%;
-    max-width: unset;
+    width: calc(50% - 1.5rem);
   }
 
-  main
-    > section:nth-child(4)
-    > div:nth-child(3)
-    > div
-    > div
-    > img:nth-child(2) {
+  main > section:nth-child(4) > div:nth-child(3) > div > img:nth-child(2) {
     bottom: 0.5rem;
     right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main > section:nth-child(4) > div:nth-child(3) > div {
+    width: 75%;
   }
 }
 
