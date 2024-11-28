@@ -449,7 +449,7 @@ main > section:nth-child(4) > div:nth-child(3) > div > img:nth-child(2) {
   right: 1rem;
   width: 25%;
   border-radius: 50%;
-  border: solid 0.5rem var(--beige);
+  border: solid 0.3rem var(--beige);
   background-color: white;
 }
 
