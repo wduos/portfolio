@@ -52,6 +52,11 @@ body {
   font-style: normal;
 }
 
+.mono {
+  font-family: "Ubuntu Mono", monospace;
+  font-style: normal;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -563,7 +568,45 @@ main > section:nth-child(5) > div:nth-child(3) > button:nth-child(2) > img {
 
 main > section:nth-child(6) {
   padding: 1rem;
+  margin-bottom: 1rem;
 }
+
+main > section:nth-child(6) > div {
+  display: flex;
+  align-items: flex-start;
+}
+
+main > section:nth-child(6) > div > div {
+  width: 50%;
+}
+
+main > section:nth-child(6) > div > div > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+main > section:nth-child(6) > div > div > div > img {
+  width: 3.5rem;
+}
+
+main > section:nth-child(7) {
+  padding: 1rem;
+}
+
+main > section:nth-child(7) > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+main > section:nth-child(7) > h3 > img {
+  width: 1rem;
+}
+
 footer {
   width: 100vw;
   background-color: var(--green);
