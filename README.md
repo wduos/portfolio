@@ -4,7 +4,7 @@ Bem-vindo ao meu portfólio pessoal! Este repositório contém uma coleção de 
 
 ## Tecnologias Usadas
 
-- HTML, CSS, JavaScript
+- HTML
 - CSS
 - JavaScript
 - Git
