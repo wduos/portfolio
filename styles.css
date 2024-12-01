@@ -42,6 +42,10 @@ body {
   font-weight: 700;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .center {
   display: block;
   text-align: center;
@@ -55,6 +59,10 @@ body {
 .mono {
   font-family: "Ubuntu Mono", monospace;
   font-style: normal;
+}
+
+.tiny {
+  font-size: 0.9rem;
 }
 
 header {
@@ -568,30 +576,46 @@ main > section:nth-child(5) > div:nth-child(3) > button:nth-child(2) > img {
 
 main > section:nth-child(6) {
   padding: 1rem;
-  margin-bottom: 1rem;
 }
 
 main > section:nth-child(6) > div {
-  display: flex;
-  align-items: flex-start;
-}
-
-main > section:nth-child(6) > div > div {
-  width: 50%;
-}
-
-main > section:nth-child(6) > div > div > div {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  padding: 0.5rem;
+  border: solid var(--font----) 1px;
 }
 
-main > section:nth-child(6) > div > div > div > img {
-  width: 3.5rem;
+main > section:nth-child(6) > div > img {
+  width: 5rem;
+  border: solid #f57520 5px;
+}
+
+main > section:nth-child(6) > div > div > h3 {
+  line-height: 1.5rem;
+}
+
+main > section:nth-child(6) > div > div > p {
+  line-height: 1.4rem;
+}
+
+main > section:nth-child(6) > ul {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+main > section:nth-child(6) > ul > li {
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  main > section:nth-child(6) > div {
+    display: flex;
+  }
 }
 
 main > section:nth-child(7) {
-  padding: 1rem;
+  padding-inline: 1rem;
 }
 
 main > section:nth-child(7) > h3 {
