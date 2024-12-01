@@ -591,6 +591,9 @@ main > section:nth-child(5) > div:nth-child(3) > button:nth-child(2) > img {
 
 main > section:nth-child(6) {
   padding: 1rem;
+  animation: fade-in 0.5s forwards ease-out;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 main > section:nth-child(6) > div {
@@ -631,6 +634,9 @@ main > section:nth-child(6) > ul > li {
 
 main > section:nth-child(7) {
   padding-inline: 1rem;
+  animation: fade-in 0.5s forwards ease-out;
+  animation-delay: 1.1s;
+  opacity: 0;
 }
 
 main > section:nth-child(7) > h3 {
